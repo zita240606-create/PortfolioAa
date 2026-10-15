@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลงานการออกแบบ (Portfolio) | Creative Media Student Portfolio</title>
+  
+  <!-- Favicon Icon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/img00.jpeg">
+
+  <!-- Google Fonts (Prompt & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.6.0 via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Loading Animation Screen (Preloader)
+       ======================================================================== -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <div class="spinner-ring"></div>
+      <div class="spinner-inner"></div>
+      <div class="spinner-logo"><i class="fa-solid fa-briefcase"></i></div>
+    </div>
+    <div class="preloader-text">MY PORTFOLIO</div>
+  </div>
+
+  <!-- ========================================================================
+       Ambient Animated Gradient Background
+       ======================================================================== -->
+  <div class="ambient-bg">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- ========================================================================
+       Sticky Navigation Bar
+       ======================================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-badge">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+        <span>PORTFOLIO<span class="text-warning">.</span></span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <button class="btn-theme-toggle" id="themeToggle" aria-label="สลับโหมดมืด/สว่าง" title="สลับโหมดมืด/สว่าง">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="เปิดเมนูนำทาง">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+        <ul class="navbar-nav my-2 my-lg-0 gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fa-solid fa-house me-1"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">
+              <i class="fa-solid fa-graduation-cap me-1"></i> Education
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="portfolio.html">
+              <i class="fa-solid fa-briefcase me-1"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activity.html">
+              <i class="fa-solid fa-trophy me-1"></i> Activity
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              <i class="fa-solid fa-paper-plane me-1"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       Main Content Area (Portfolio Page)
+       ======================================================================== -->
+  <main class="py-5">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-sparkles me-1"></i> Creative Showcase</span>
+        <h1 class="section-title">ผลงานการออกแบบ <span class="text-gradient">3 ผลงานเด่น 🌸</span></h1>
+        <p class="section-subtitle">
+          รวบรวมผลงานการออกแบบที่ฉันตั้งใจสร้างสรรค์ขึ้น ✨
+        </p>
+      </div>
+
+      <!-- Portfolio Grid (3 Items) -->
+      <div class="row g-4 justify-content-center" id="portfolioContainer">
+
+        <!-- ==================== Item 1 ==================== -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal delay-1">
+          <div class="glass-card portfolio-card h-100">
+            <div class="portfolio-img-box">
+              <img src="assets/images/Project-1.png" alt="งานออกเเบบตัวละคร">
+            </div>
+            <div class="portfolio-body">
+              <div class="text-primary small fw-bold mb-1"><i class="fa-solid fa-pen-nib me-1"></i> Drawing</div>
+              <h4 class="portfolio-title">งานออกเเบบตัวละคร</h4>
+              <p class="portfolio-desc">
+                ผลงานออกเเบบตัวละคร รายวิชา 1205204
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                <span class="small text-muted"><i class="fa-solid fa-palette me-1"></i> Character Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== Item 2 ==================== -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal delay-2">
+          <div class="glass-card portfolio-card h-100">
+            <div class="portfolio-img-box">
+              <img src="assets/images/Project-2.jpeg" alt="การสเก็ตช์ภาพนอกสถานที่">
+            </div>
+            <div class="portfolio-body">
+              <div class="text-primary small fw-bold mb-1"><i class="fa-solid fa-paintbrush me-1"></i> Sketch &amp; Art</div>
+              <h4 class="portfolio-title">การสเก็ตช์ภาพนอกสถานที่</h4>
+              <p class="portfolio-desc">
+                กิจกรรมฝึกทักษะการวาดภาพและสเก็ตช์งานศิลปะนอกสถานที่
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                <span class="small text-muted"><i class="fa-solid fa-tree me-1"></i> Outdoor Art Workshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== Item 3 ==================== -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal delay-3">
+          <div class="glass-card portfolio-card h-100">
+            <div class="portfolio-img-box">
+              <img src="assets/images/Project-3.jpeg" alt="วาดรูปงานกลุ่ม รายวิชา 1205101">
+            </div>
+            <div class="portfolio-body">
+              <div class="text-primary small fw-bold mb-1"><i class="fa-solid fa-paint-roller me-1"></i> Paint</div>
+              <h4 class="portfolio-title">วาดรูปงานกลุ่ม รายวิชา 1205101</h4>
+              <p class="portfolio-desc">
+                การวาดรูปลงสีผ้าใบ
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                <span class="small text-muted"><i class="fa-solid fa-palette me-1"></i> Canvas Painting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Next Navigation Prompt -->
+      <div class="mt-5 glass-card p-4 text-center reveal">
+        <h4 class="fw-bold mb-2">สนใจดูกิจกรรมและการอบรมที่ผ่านมา?</h4>
+        <p class="text-muted mb-3">ดูประวัติการเข้าร่วมประกวด แฮกกาธอน คอร์สอบรม และกิจกรรมพัฒนาทักษะต่าง ๆ</p>
+        <a href="activity.html" class="btn-secondary-custom">
+          <span>ไปที่หน้า Activity</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Project Details Modal (Bootstrap 5 Modal)
+       ======================================================================== -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content glass-card border-0">
+        <div class="modal-header border-bottom border-light border-opacity-10">
+          <div>
+            <span class="badge bg-primary mb-1" id="modalProjectCategory">หมวดหมู่</span>
+            <h4 class="modal-title fw-bold" id="modalProjectTitle">ชื่อผลงาน</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
+        </div>
+        <div class="modal-body p-4">
+          <!-- Large Preview Image -->
+          <div class="rounded-4 overflow-hidden mb-4 shadow-sm border">
+            <img src="" id="modalProjectImg" alt="ภาพตัวอย่างผลงาน" class="w-100">
+          </div>
+        </div>
+        <div class="modal-footer border-top border-light border-opacity-10">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+          <a href="contact.html" class="btn-primary-custom text-decoration-none">
+            <i class="fa-solid fa-paper-plane"></i> สนใจผลงานสไตล์นี้ ติดต่อฉันได้เลยนะคะ 💌
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Scroll to Top Floating Button
+       ======================================================================== -->
+  <button id="scrollTopBtn" aria-label="เลื่อนขึ้นด้านบน" title="เลื่อนขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================================================
+       Footer (Identical across all pages)
+       ======================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-5 col-md-6">
+          <div class="footer-logo">
+            <div class="brand-badge" style="width: 32px; height: 32px; font-size: 0.9rem;">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <span>PORTFOLIO<span class="text-warning">.</span></span>
+          </div>
+          <p class="footer-desc">
+            เว็บไซต์พอร์ตโฟลิโอแสดงผลงาน ประวัติการศึกษา และกิจกรรมของนักศึกษาสาขา Creative Media 
+            ออกแบบด้วยแนวคิด Modern, Minimal &amp; Glassmorphism เพื่อประสบการณ์ที่ดีที่สุด
+          </p>
+          <div class="d-inline-flex align-items-center gap-2 glass-pill mt-2">
+            <span class="spinner-grow spinner-grow-sm text-success" role="status"></span>
+            <span class="small fw-bold">Open for Internship &amp; Projects</span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5 class="footer-title">เมนูนำทาง</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right text-primary"></i> Home</a></li>
+            <li><a href="education.html"><i class="fa-solid fa-angle-right text-primary"></i> Education</a></li>
+            <li><a href="portfolio.html"><i class="fa-solid fa-angle-right text-primary"></i> Portfolio</a></li>
+            <li><a href="activity.html"><i class="fa-solid fa-angle-right text-primary"></i> Activity</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right text-primary"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5 class="footer-title">ช่องทางติดต่อ</h5>
+          <p class="small text-muted mb-3">ติดตามผลงานและติดต่อพูดคุยได้ทางโซเชียลมีเดีย</p>
+          <div class="footer-social-icons mb-3">
+            <a href="https://facebook.com" target="_blank" class="footer-social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/zita240606-create" target="_blank" class="footer-social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <div class="small text-muted">
+            <i class="fa-solid fa-envelope text-primary me-1"></i> 67011213149@msu.ac.th
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 My Portfolio. Designed with <span class="text-danger">❤</span> by <strong class="text-primary">Your Name</strong>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <span class="small text-muted">ธีม Rose Gold &amp; Aesthetic Pastel</span>
+          <span class="text-muted">•</span>
+          <a href="#" class="small text-primary">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 Bundle JS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Master Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
